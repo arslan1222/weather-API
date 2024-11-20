@@ -1,0 +1,26 @@
+<%- layout("/layouts/boilerplate.ejs")%>
+</head>
+<body>
+    <div class="main-content">
+        <header>
+            <h2 class="heading">Live Weather</h2>
+        </header>
+        <article class="widget">
+            <form class="weatherLocation" action="/home" method="POST">
+                <label class="font1" for="cityInput"> <b>City Name:</b> </label>
+                <input style="border-radius: 2px;" type="text" name="cityName" id="cityInput">
+                <button class="font2 go-btn" type="submit" >Go</button>
+                </form>
+            <div class="weatherIcon"><i style="padding-top: 0px;" class="wi"><img style="height: 150px;" src="<%= img %>"></i></div>
+            <div class="weatherInfo">
+                <div class="temperature"><span><p><%= temp1 %></p></span></div>
+                <div class="description">    
+                    <div class="weatherCondition"><p><%= des %></p></div>    
+                    <div class="place"><h3><%= place %></h3></div>
+                </div>
+            </div>
+            <div class="date"><p class="date1"><%= date1 %></p></div>
+        </article>
+    </div>
+</body>
+</html>

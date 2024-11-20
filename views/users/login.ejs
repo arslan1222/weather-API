@@ -1,0 +1,28 @@
+<%- layout("/layouts/boilerplate.ejs")%>
+
+    <div class="row mt-3">
+        <h2 class="col-6 offset-3"><span class="login">Log in</span> For Home Page</h2>
+    <div class="col-6 offset-3">
+        <form action="/login" method="POST" class="needs-validation" novalidate>
+            <lable for="username" class="form-label">Username</lable>
+            <input 
+            name="username" 
+            id="username"
+            type="text" 
+            class="form-control" 
+            required>
+    
+            <!-- Password field -->
+            <lable for="password" class="form-label">Password</lable>
+            <input 
+            name="password" 
+            id="password"
+            type="password" 
+            class="form-control" 
+            required>
+            <button class="btn btn-success mt-3">Log in</button>
+        </form>
+            
+            
+    </div>
+    </div>
